@@ -1,0 +1,83 @@
+.hero {
+    background-color: #000000;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-pic {
+    height: 200px;
+    width: 150px;
+    border-radius: 1%;
+    object-fit: cover;
+}
+
+section {
+    padding: 50px 0;
+}
+
+#about img {
+    max-width: 150px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-top: 10px;
+    color: white;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 2s ease-out forwards;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: white;
+    opacity: 0;
+    animation: fadeInUp 2s 0.5s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contact-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    color: #000000; 
+    transition: transform 0.3s, color 0.3s;
+}
+
+.contact-icons a:hover {
+    transform: scale(1.2);
+    color: #007bff; 
+}
+
+
+.contact-icons .fa-facebook:hover {
+    color: #3b5998;
+}
+
+.contact-icons .fa-linkedin:hover {
+    color: #0077b5;
+}
+
+.contact-icons .fa-instagram:hover {
+    color: #e4405f;
+}
+
+.contact-icons .fa-phone:hover {
+    color: #28a745; 
+}
+
