@@ -10,11 +10,11 @@
 }
 
 .profile-pic {
-    height: 200px;
-    width: 150px;
-    border-radius: 1%;
-    object-fit: cover;
+    height: auto;
+    width: 100%;
+    max-width: 150px; 
 }
+
 
 section {
     padding: 50px 0;
@@ -81,3 +81,8 @@ html {
     color: #28a745; 
 }
 
+@media (max-width: 768px) {
+    .contact-icons a {
+        font-size: 24px; 
+    }
+}
